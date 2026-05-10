@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #838383;
+}
+header{
+    background-color: #323232;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+.logo{
+    width:8.9%;
+    position: relative;
+    left:25px;
+}
+nav{
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+}
+a{
+    
+    text-decoration: none;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color:#b1afaf
+}
+.map{
+    background-color: white;
+    flex:4;
+}
+
+#imginfo{
+    width:75%;
+    border: 5px ridge black;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.info{
+    flex:1;
+    padding: 10px 20px;
+    color: #f4f4f4;
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: italic;
+    font-size:16px;
+}
+.text{
+    color:black;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.imghistory{
+    width: 40%;
+    border: 5px ridge black;
+}
+.textinfo{
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: italic;
+    font-size:16px;
+}
+footer{
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 5px 5px;
+}
