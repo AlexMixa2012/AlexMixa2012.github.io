@@ -17,6 +17,13 @@ header{
     position: relative;
     left:25px;
 }
+.logo:active{
+    width:8.9%;
+    position: relative;
+    left:25px;
+    transform: rotate(180deg);
+    transition: 20.03s;
+}
 nav{
     display: flex;
     width: 500px;
@@ -30,6 +37,16 @@ a{
     font-style: normal;
     font-size: 24px;
     color:#b1afaf
+}
+a:hover{
+    text-decoration: none;
+    font-family: "Courier Prime", monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    animation:anim1 3s 1;
+    animation-timing-function:ease-out;
+    color:#b1afaf;
 }
 .map{
     background-color: white;
@@ -65,9 +82,19 @@ main{
     font-size: 16px;
 }
 
+.text:hover{
+    color:black;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+
 .imghistory{
     width: 40%;
     border: 5px ridge black;
+    position: sticky;
 }
 .textinfo{
     font-family: "Courier Prime", monospace;
@@ -81,4 +108,30 @@ footer{
     font-style: normal;
     font-size: 16px;
     padding: 5px 5px;
+    animation:anim3 3s infinite;
+    animation-delay:1s;
+    animation-direction:alternate;
+}
+
+@keyframes anim1 {
+    0%{
+        font-size: 24px;
+    }
+    50%{
+        font-size: 28px;
+    }
+    100%{
+        font-size: 28px;
+    }
+}
+@keyframes anim3 {
+    0%{
+        color:black;
+    }
+    50%{
+        color:green;
+    }
+    100%{
+        color:black;
+    }
 }
